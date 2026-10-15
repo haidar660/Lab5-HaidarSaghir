@@ -46,3 +46,7 @@ python -m unittest discover -s tests -v
 ```
 
 The tests use a temporary SQLite database and exercise the full CRUD flow plus invalid requests and missing users.
+
+## Moodle submission evidence
+
+The repository includes `database.db` with the `users` table. The `screenshots/` folder is for one Postman screenshot per request, showing the request method, URL, and result together. Run the collection requests in order and save screenshots as `01-post-add-user.png`, `02-get-all-users.png`, `03-get-user-by-id.png`, `04-put-update-user.png`, and `05-delete-user.png`.
