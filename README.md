@@ -16,7 +16,7 @@ python -m pip install -r requirements.txt
 python app.py
 ```
 
-The server starts at `http://localhost:5000`. Opening `http://localhost:5000/api/users` in a browser should show `[]` before any users are added. The `database.db` file is created automatically when the app starts. Python includes `sqlite3`, so it does not need a separate package installation.
+The server starts at `http://localhost:5000`. Opening `http://localhost:5000/api/users` in a browser shows the users currently stored in the database. The committed `database.db` contains one sample John Doe record from the Postman exercise; if you start with an empty database, the endpoint returns `[]`. The file is created automatically if it is missing. Python includes `sqlite3`, so it does not need a separate package installation.
 
 ## API routes
 
@@ -49,4 +49,4 @@ The tests use a temporary SQLite database and exercise the full CRUD flow plus i
 
 ## Moodle submission evidence
 
-The repository includes `database.db` with the `users` table. The `screenshots/` folder is for one Postman screenshot per request, showing the request method, URL, and result together. Run the collection requests in order and save screenshots as `01-post-add-user.png`, `02-get-all-users.png`, `03-get-user-by-id.png`, `04-put-update-user.png`, and `05-delete-user.png`.
+The repository includes `database.db` with the `users` table and [five Postman screenshots](screenshots/README.md), one for each request. Each screenshot shows the request method, URL, and response together.
